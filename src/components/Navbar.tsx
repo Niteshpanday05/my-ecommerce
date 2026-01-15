@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-50 bg-green-300 shadow">
-      <div className="container max-auto flex  items-center justify-between px-4 py-4">
+    <nav className="sticky top-0 z-50 bg-white shadow p-6">
+      <div className=" flex  items-center justify-between">
         <Link href="/" className="hover:text-blue-600">
           My Ecommerce
         </Link>
