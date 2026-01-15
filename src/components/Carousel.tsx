@@ -3,7 +3,7 @@ import React from 'react'
 const carousel = () => {
   return (
     <div>
-      
+      Rhis is carousel section
     </div>
   )
 }
