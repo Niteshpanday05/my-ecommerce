@@ -15,8 +15,8 @@ export default async function Home() {
     <div>
       <section className="w-full bg-sky-300 py-16">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2">
-          <div className="max-w-md space-y-4">
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+          <div className="max-w-md space-y-4 md:grid-cols-1">
+            <h2 className="text-3xl font-bold tracking-tight  md:text-4xl">
               Welcome to My Ecommerce
             </h2>
             <p className="text-neutral-600">Discover the latest products</p>
@@ -29,13 +29,15 @@ export default async function Home() {
               </Link>
             </Button>
           </div>
-          <Image
+        <div className="md:grid-cols-1">
+            <Image
             alt="Banner Image"
             className="rounded"
             width={450}
             height={450}
             src={products.data[0].images[0]}
           />
+        </div>
         </div>
       </section>
       <Carousel />
